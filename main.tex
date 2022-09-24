@@ -1,0 +1,150 @@
+%%%%%%%%%%%%%%%%%
+% * <sandi10.96@gmail.com> 2018-06-25T16:57:48.502Z:
+%
+% ^.
+% This is an sample CV template created using altacv.cls
+% (v1.1.3, 30 April 2017) written by Sandeep Yadav (sandi10.96@gmail.com). Now compiles with pdfLaTeX, XeLaTeX and LuaLaTeX.
+% 
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% If you need to pass whatever options to xcolor
+\PassOptionsToPackage{dvipsnames}{xcolor}
+
+%% If you are using \orcid or academicons
+%% icons, make sure you have the academicons 
+%% option here, and compile with XeLaTeX
+%% or LuaLaTeX.
+% \documentclass[10pt,a4paper,academicons]{altacv}
+
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,normalphoto]{altacv}
+
+\documentclass[10pt,a4paper]{altacv}
+
+%% AltaCV uses the fontawesome and academicon fonts
+%% and packages. 
+%% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols.
+%% 
+%% Compile with LuaLaTeX for best results. If you
+%% want to use XeLaTeX, you may need to install
+%% Academicons.ttf in your operating system's font 
+%% folder.
+
+
+% Change the page layout if you need to
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1.25cm,bottom=1.25cm,footskip=2\baselineskip}
+
+% Change the font if you want to.
+
+% If using pdflatex:
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[default]{lato}
+
+% If using xelatex or lualatex:
+% \setmainfont{Lato}
+
+% Change the colours if you want to
+\definecolor{darkblue}{HTML}{00394d}
+\definecolor{Mulberry}{HTML}{005c99}
+\definecolor{SlateGrey}{HTML}{000000}
+\definecolor{LightGrey}{HTML}{333333}
+\colorlet{heading}{darkblue}
+\colorlet{accent}{Mulberry}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% sample.bib contains your publications
+\addbibresource{sample.bib}
+
+\begin{document}
+\name{Sandeep Yadav}
+\tagline{Senior Software Engineer}
+\photo{3cm}{MYPIC}
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+  \email{sandi10.96@gmail.com}
+  \phone{+91 7206716717}
+  %% You MUST add the academicons option to \documentclass, then compile with LuaLaTeX or XeLaTeX, if you want to use \orcid or other academicons commands.
+%   \orcid{orcid.org/0000-0000-0000-0000}
+}
+
+%% Make the header extend all the way to the right, if you want. 
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+\cvsection[page1sidebar]{Experience 4 years }
+
+\cvevent{Product Design Engineer}{MBRDI}{Jan 2016 -- Present}{Bengaluru}
+\begin{itemize}
+\item Part number and BOM Structure creation 
+\item Creation and Releases of DCNs for various quality gates
+\item 3D and 2D-Drawing data archiving for parts in UG NX
+\item Design of flexible part for battery components in UG NX
+\item Contacting supplier and co-ordinating with counterparts for correct data of parts
+\item Positioning and stamping of parts with required Product phase
+\item Understanding and solving discrepancies among various PDM tools
+\item Hands on experience of the process flow and concerned components release in Daimler,Germany for various projects
+\end{itemize}
+\medskip
+
+\divider
+\medskip
+
+\cvevent{Design Engineer}{Volvo Buses India Pvt Ltd}{May 2014 -- Dec 2015}{Bengaluru}
+\begin{itemize}
+\item Receive and respond to Costumer Adaptation request from market support team
+\item Creation of "New Product Specification" sheet in terms of product features,documentation and maintenance of technical concepts for new projects
+\item Support and create technical feasibility study for new product concept and convert them to system defined variant codes.
+\item Creation and maintenance of Project Time-plan and follow up project GATEs as per time time plan.
+\item Identify, collect\& deliver techno-commercial feasibility study of potential cost reduction ideas to program manager
+\item Design and 2D drawing creation in CATIA \& BOM creation of different hatches and gas springs of the bus
+\item Preparation of presentations and RFQ for supplier \& supplier selection process
+\item Secure new parts \& their trials conducted in proto shop as per project time-plan
+\item Coordination between Manufacturing, Purchase, Product Development and homologation for design change introduction in production line as per time-plan
+\item Decision of making parts in-house or procurement from supplier
+\item Study of production time at different workstations and sub-assemblies in production line
+\end{itemize}
+\medskip
+\bigskip
+\vspace{20mm}
+
+
+\vspace{2mm}
+
+\cvsection{Hobbies}
+
+\cvtag{Logo Designing} 
+\cvtag{Digital Banners and Card designing}
+\cvtag{Painting}
+\cvtag{Product concept sketching}
+\cvtag{Photography}
+\cvtag{Traveling}
+\cvtag{Cooking}
+
+%% If the NEXT page doesn't start with a \cvsection but you'd
+%% still like to add a sidebar, then use this command on THIS
+%% page to add it. The optional argument lets you pull up the 
+%% sidebar a bit so that it looks aligned with the top of the
+%% main column.
+%%\addnextpagesidebar[-1ex]{page3sidebar}
+
+\end{document}
